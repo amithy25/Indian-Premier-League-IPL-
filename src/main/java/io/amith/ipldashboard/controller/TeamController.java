@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import io.amith.ipldashboard.repository.MatchRepository;
 import io.amith.ipldashboard.repository.TeamRepository;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
   private TeamRepository teamRepository;
