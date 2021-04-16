@@ -48,6 +48,9 @@ public class TeamController {
     
   }
 
-  
+  @GetMapping("/team")
+  public Iterable <Team> getAllTeams() {
+    return teamRepository.findAll();
+  }
 
 }
